@@ -70,7 +70,10 @@ function getMenuItems() {
     menuItems += `
                 <div class="menu-item" id=${item.id}>
           <div class="item">
-            <p class="emoji" >${item.emoji}</p>
+            <p class="emoji" ><img
+            src="${item.name}.png"
+            alt="${item.name}"
+          /></p>
             <div class="item-details">
               <h2 class="item-name">${item.name}</h2>
               <p class="ingredients">${item.ingredients.join(",")}</p>
