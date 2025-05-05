@@ -1,0 +1,224 @@
+/* CSS RESET */
+/* 1. Use a more-intuitive box-sizing model */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+  margin: 0;
+}
+
+/* 3. Enable keyword animations */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    interpolate-size: allow-keywords;
+  }
+}
+
+body {
+  /* 4. Add accessible line-height */
+  line-height: 1.5;
+  /* 5. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 6. Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 7. Inherit fonts for form controls */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* 8. Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* 9. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+/*
+    10. Create a root stacking context
+  */
+#root,
+#__next {
+  isolation: isolate;
+}
+
+/* MY CSS */
+body {
+  font-family: "Smythe", system-ui;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+hr {
+  border: 1px solid #d2d2d2;
+  margin: 0 auto;
+}
+
+hr.bill-margin {
+  border: 2px solid #393333;
+}
+
+.container {
+  width: 550px;
+  min-width: 40%;
+}
+
+.menu,
+.bill {
+  padding: 1rem;
+}
+
+.menu-item,
+.item,
+.bill-card,
+.bill-item,
+.total-price {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-item {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.item,
+.bill-item {
+  text-align: left;
+  gap: 0.5rem;
+}
+
+.item-name,
+.bill h2 {
+  font-size: 28px;
+  font-weight: 500;
+}
+.ingredients {
+  font-size: 16px;
+  color: #8b8b8b;
+}
+.price {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.emoji {
+  font-size: 4.2rem;
+}
+
+.add {
+  font-family: "Inter", sans-serif;
+  font-size: 32px;
+  color: #3c3c3c;
+  font-weight: 200;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: #dedede solid;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.remove {
+  font-family: sans-serif;
+  font-size: 12px;
+  color: #bbbbbb;
+  cursor: pointer;
+}
+
+.bill-amt,
+.total-bill-amt {
+  font-size: 20px;
+}
+
+button {
+  font-family: "Inter", sans-serif;
+  border: none;
+  margin-top: 2rem;
+  background: #16db99;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+  border-radius: 3px;
+  width: 100%;
+  color: white;
+  padding: 1rem 1.5rem;
+  cursor: pointer;
+}
+
+.modal {
+  position: fixed;
+  margin: auto;
+  top: 80px;
+  left: 0;
+  right: 0;
+  max-width: 450px;
+  padding: 2rem;
+  font-family: sans-serif;
+  background: #ffffff;
+  border-radius: 5px;
+  filter: drop-shadow(5.18654px 5.18654px 255.437px rgba(0, 0, 0, 0.8));
+}
+
+.payment-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  font-size: 20px;
+}
+
+.payment-form input {
+  width: 100%;
+  height: 60px;
+  border: 1px solid #757575;
+  border-radius: 5px;
+  padding-left: 1rem;
+}
+
+.hidden {
+  display: none;
+}
+
+.thank-you {
+  background-color: #ecfdf5;
+  color: #065f46;
+  height: 120px;
+  font-size: 1.8rem;
+  align-content: center;
+}
